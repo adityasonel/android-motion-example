@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/temp"
+        android:layout_width="140dp"
+        android:layout_height="180dp" />
+    <TextView
+        android:fontFamily="@font/calibre_regular"
+        android:paddingTop="4dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="0dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:text="Miami Beach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

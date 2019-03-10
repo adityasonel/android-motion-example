@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".beta.BetaSecondFragment"
+    android:id="@+id/frame_container"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:background="#ff80cbc4"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:layout_marginTop="-132dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/phone"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginTop="-72dp"
+            android:layout_marginEnd="32dp"
+            android:layout_gravity="end"
+            android:src="@drawable/phone"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginBottom="-402dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/phone"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginBottom="-462dp"
+            android:layout_marginEnd="32dp"
+            android:layout_gravity="end"
+            android:src="@drawable/phone"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_merchant1"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/onboarding_merchant1"
+            android:layout_width="90dp"
+            android:layout_height="48dp" />
+        <ImageView
+            android:id="@+id/iv_merchant2"
+            android:layout_marginTop="159dp"
+            android:layout_marginEnd="48dp"
+            android:layout_gravity="end"
+            android:src="@drawable/onboarding_merchant2"
+            android:layout_width="90dp"
+            android:layout_height="48dp" />
+        <ImageView
+            android:id="@+id/iv_merchant3"
+            android:layout_marginTop="379dp"
+            android:layout_marginStart="47dp"
+            android:src="@drawable/onboarding_merchant3"
+            android:layout_width="90dp"
+            android:layout_height="48dp" />
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="4dp"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/simplpay" />
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_marginTop="176dp"
+            android:layout_marginEnd="4dp"
+            android:layout_gravity="end"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/simplpay" />
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_marginTop="328dp"
+            android:layout_marginStart="4dp"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/simplpay" />
+        <ImageView
+            android:id="@+id/iv4"
+            android:layout_marginTop="384dp"
+            android:layout_marginEnd="4dp"
+            android:layout_gravity="end"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/simplpay" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:background="@android:color/white"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:layout_marginTop="-16dp"
+            android:textColor="#708090"
+            android:textStyle="bold"
+            android:text="Keep buying with 1 tap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textColor="#708090"
+            android:text="This app adds up all your transactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

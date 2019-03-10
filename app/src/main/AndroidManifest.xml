@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.heisenbrg.motionxmple">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:name=".alpha.AlphaActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:name=".beta.BetaActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:name=".visualmukhiya.VisualMukhiyaActivity"
+            android:screenOrientation="sensorPortrait">
+        </activity>
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:name=".tubik.TubikActivity"
+            android:screenOrientation="sensorPortrait">
+        </activity>
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:name=".TestActivity"
+            android:screenOrientation="sensorPortrait">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    
+    <color name="darkGray">#A9A9A9</color>
+
+    <color name="page_indicator_dark">#80ffffff</color>
+    <color name="page_indicator_dark_selected">#ffffffff</color>
+
+    <color name="visual_dark">#36539D</color>
+    <color name="visual_light">#778DAE</color>
+
+    <color name="tubik_bg_color">#FDFDFE</color>
+    <color name="tubik_primary_color">#FD9BA3</color>
+</resources>

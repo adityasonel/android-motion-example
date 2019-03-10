@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterAnimation">@transition/explode</item>
+        <item name="android:windowExitAnimation">@transition/explode</item>
+    </style>
+</resources>

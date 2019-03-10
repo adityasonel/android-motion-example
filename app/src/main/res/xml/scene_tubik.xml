@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="DuplicateIds">
+
+    <Transition
+        app:constraintSetStart="@+id/initial_bottombar_state"
+        app:constraintSetEnd="@+id/final_bottombar_state"
+        app:duration="320" >
+    </Transition>
+
+    <ConstraintSet
+        android:id="@+id/initial_bottombar_state">
+
+        <Constraint
+            android:id="@+id/bg_view"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#44000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/bottombar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/bg_tubik_bottombar"
+            app:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/ib_arrow_up"
+            android:layout_width="48dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_drop_up_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            app:fabSize="normal"
+            android:src="@drawable/ic_add_white_24dp"
+            app:backgroundTint="@android:color/black"
+            android:translationZ="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+            android:id="@+id/bottom_sheet"
+            android:orientation="vertical"
+            android:background="@drawable/bg_bottomsheet"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+
+    <ConstraintSet
+        android:id="@+id/final_bottombar_state">
+
+        <Constraint
+            android:id="@+id/bg_view"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#44000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/bottombar"
+            android:layout_width="180dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/bg_tubik_bottombar"
+            app:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/ib_arrow_up"
+            android:rotation="180"
+            android:layout_width="48dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_drop_up_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/fab"
+            android:alpha="0"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            app:fabSize="normal"
+            android:src="@drawable/ic_add_white_24dp"
+            app:backgroundTint="@android:color/black"
+            android:translationZ="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+            android:id="@+id/bottom_sheet"
+            android:orientation="vertical"
+            android:background="@drawable/bg_bottomsheet"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+
+</MotionScene>

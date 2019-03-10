@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:text="@string/title"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.08" />
+
+        <ImageButton
+            android:id="@+id/ib_test"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintVertical_bias="0.086"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_test"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintVertical_bias="0.04"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+            <TextView
+                android:id="@+id/tv_1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingStart="32dp"
+                android:paddingEnd="0dp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:text="Alpha Onboarding UI/UX"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintVertical_bias="0.04"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_1">
+            <TextView
+                android:id="@+id/tv_2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingStart="32dp"
+                android:paddingEnd="0dp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:text="Beta Onboarding UI/UX"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_3"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintVertical_bias="0.04"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_2">
+            <TextView
+                android:id="@+id/tv_3"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingStart="32dp"
+                android:paddingEnd="0dp"
+                android:textColor="@android:color/white"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:text="Visual Mukhiya\nOnboarding UI/UX"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_4"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintVertical_bias="0.04"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_3">
+            <TextView
+                android:id="@+id/tv_4"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingStart="32dp"
+                android:paddingEnd="0dp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:text="Tubik's Material Design"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

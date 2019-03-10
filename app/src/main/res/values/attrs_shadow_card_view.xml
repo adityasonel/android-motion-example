@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShadowCardView">
+        <attr name="shadowColor" format="color" />
+        <!--<attr name="startColor" format="color" />-->
+        <!--<attr name="endColor" format="color" />-->
+        <attr name="shadowCornerRadius" format="dimension" />
+    </declare-styleable>
+</resources>

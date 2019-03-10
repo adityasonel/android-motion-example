@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@android:color/darker_gray"
+    tools:context=".alpha.AlphaActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="@+id/view_pager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:id="@+id/tv_skip"
+            android:gravity="center"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="22dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="Skip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <com.heisenbrg.motionxmple.widget.InkPageIndicator
+            android:id="@+id/page_indicator"
+            android:layout_marginTop="3dp"
+            app:dotDiameter="8dp"
+            app:dotGap="8dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:pageIndicatorColor="@color/page_indicator_dark"
+            app:currentPageIndicatorColor="@color/page_indicator_dark_selected"/>
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="0dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="Next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

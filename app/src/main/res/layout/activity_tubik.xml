@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:background="@color/tubik_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/scene_tubik"
+    tools:context=".tubik.TubikActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/bg_view"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#44000000"/>
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/bottom_sheet"
+        android:orientation="vertical"
+        android:background="@drawable/bg_bottomsheet"
+        android:layout_width="0dp"
+        android:layout_height="320dp"
+        app:layoutDescription="@xml/scene_tubik_bottomsheet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:id="@+id/tv_name"
+            android:paddingStart="32dp"
+            android:paddingEnd="0dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/calibre_bold"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:text="Michelle Whelan"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"/>
+        <TextView
+            android:id="@+id/tv_drafts"
+            android:fontFamily="@font/calibre_medium"
+            android:paddingStart="32dp"
+            android:paddingEnd="0dp"
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/ic_settings_black_24dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:text="Drafts"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"/>
+        <TextView
+            android:id="@+id/tv_fav"
+            android:fontFamily="@font/calibre_medium"
+            android:paddingStart="32dp"
+            android:paddingEnd="0dp"
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/ic_settings_black_24dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:text="Favorites"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_drafts"/>
+        <TextView
+            android:id="@+id/tv_places"
+            android:fontFamily="@font/calibre_medium"
+            android:paddingStart="32dp"
+            android:paddingEnd="0dp"
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/ic_settings_black_24dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:text="Places"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_fav"/>
+        <TextView
+            android:id="@+id/tv_trips"
+            android:fontFamily="@font/calibre_medium"
+            android:paddingStart="32dp"
+            android:paddingEnd="0dp"
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/ic_settings_black_24dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:text="Trips"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_places"/>
+        <ImageButton
+            android:id="@+id/ib_setting"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_settings_black_24dp"
+            android:background="@android:color/transparent"
+            android:layout_width="48dp"
+            android:layout_height="?attr/actionBarSize" />
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+    <FrameLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_tubik_bottombar"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:layout_marginStart="48dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="Journaling"
+            android:fontFamily="@font/calibre_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/ib_search"
+            android:layout_gravity="end"
+            android:layout_marginEnd="48dp"
+            android:layout_width="48dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_search_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/ib_more_vet"
+            android:layout_gravity="end"
+            android:layout_width="48dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_more_vert_black_24dp" />
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        app:fabSize="normal"
+        android:src="@drawable/ic_add_white_24dp"
+        app:backgroundTint="@android:color/black"
+        android:translationZ="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ib_arrow_up"
+        android:layout_width="48dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_arrow_drop_up_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

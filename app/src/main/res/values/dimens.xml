@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="simpl_logo_left_up">-119.0dip</dimen>
+    <dimen name="simpl_logo_margin_left">-89.0dip</dimen>
+    <dimen name="simpl_logo_right_width">88.5dip</dimen>
+
+    <dimen name="simpl_logo_third_left_down">89.0dip</dimen>
+    <dimen name="simpl_logo_third_right_down">145.0dip</dimen>
+    <dimen name="simpl_logo_third_right_up">-63.0dip</dimen>
+</resources>
