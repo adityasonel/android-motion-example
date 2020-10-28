@@ -39,8 +39,9 @@
             android:screenOrientation="sensorPortrait">
         </activity>
         <activity
+            android:theme="@style/TestTheme"
             android:parentActivityName=".MainActivity"
-            android:name=".TestActivity"
+            android:name=".testing.TestActivity"
             android:screenOrientation="sensorPortrait">
         </activity>
     </application>

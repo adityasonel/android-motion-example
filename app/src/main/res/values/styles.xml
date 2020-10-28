@@ -9,4 +9,12 @@
 
         <item name="android:fontFamily">@font/nunito</item>
     </style>
+
+    <style name="TestTheme" parent="Theme.MaterialComponents.Light.DarkActionBar" >
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:fontFamily">@font/nunito</item>
+    </style>
 </resources>

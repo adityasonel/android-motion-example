@@ -10,11 +10,13 @@ import android.app.ActivityOptions;
 import android.content.Intent;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.heisenbrg.motionxmple.alpha.AlphaActivity;
 import com.heisenbrg.motionxmple.beta.BetaActivity;
+import com.heisenbrg.motionxmple.testing.TestActivity;
 import com.heisenbrg.motionxmple.tubik.TubikActivity;
 import com.heisenbrg.motionxmple.visualmukhiya.VisualMukhiyaActivity;
 
